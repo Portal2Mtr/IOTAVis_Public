@@ -1,0 +1,14 @@
+# started on Fri Aug 20 13:47:05 2021
+
+
+ Performance counter stats for 'python3 ./powerscript.py --algo EIOTA --trial 3':
+
+      317544848239      instructions              #    1.64  insn per cycle         
+      194078273432      cycles                                                      
+
+     324.334736581 seconds time elapsed
+
+     322.982745000 seconds user
+       0.502312000 seconds sys
+
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+#SBATCH --job-name=isobandit
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=64
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=100G
+#SBATCH --time=1-0:0:0
+#SBATCH --mail-type=end
+#SBATCH --export=all
+#SBATCH --mail-user=crfmb@mst.edu
+#SBATCH --output=./output/isobandit-%A.out
+#SBATCH --error=./output/isobandit-%A.err
+
+# Run on foundry
+source /home/crfmb/anaconda3/bin/activate clusterProj
+export OMP_NUM_THREADS=1
+export PYTHONPATH=$(pwd)
+
+TEC=$(($SLURM_NNODES * $SLURM_NTASKS_PER_NODE * $SLURM_CPUS_PER_TASK))
+
+python -u ./isolatedbanditregret.py --numJobs="${TEC}"
+
+
+
+
+
+

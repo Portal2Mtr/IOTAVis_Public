@@ -1,0 +1,14 @@
+# started on Fri Aug 20 13:09:48 2021
+
+
+ Performance counter stats for 'python3 ./powerscript.py --algo MCMC --trial 2':
+
+      351409416074      instructions              #    1.62  insn per cycle         
+      217240770327      cycles                                                      
+
+     363.084229585 seconds time elapsed
+
+     361.652279000 seconds user
+       0.442512000 seconds sys
+
+

@@ -1,0 +1,39 @@
+# Decision Tree configuration settings for training
+# Use trimmed training parameters from optuna study
+simParams: # Chosen from trial 122 from optuna study and rounded
+    initThresh: 1
+    splitDecay: 0.749
+    visitDecay: 0.973
+    gamma: 0.75
+    learnAlpha: 0.77 # 0.1 # Higher learning rate for original tree
+    learnDecay: 0.43 #0 # Higher learning rate for original tree
+    numEpisodes: 26 # 2 # Used 24 for original training, 4 for lighter tree in power analysis
+    lambdaRange: [5, 50]
+    numActions: 4
+    maxTreeDepth: 75 #10 # 40 is for original training, 10 is for lighter tree in power anaylsis
+    trimVisitPerc: 0.38
+    maxQVals: 150
+    banditbatch: 25
+envParams:
+    nodeCount: 1000
+    lambdaVal: 0 # Overwritten in training with random value
+    tipSelectionAlgorithm: "URTS"
+    alpha: 0.5 # For mcmc-only
+    envSeed: 0
+    alphaHigh: 0.9
+    alphaLow: 0.1
+    mcmcWindowStart: 10 # Time bounds for start and stop mcmc (reduce computation time)
+    mcmcWindowStop: 20
+optuna: # Range of parameters for parameter study in optuna
+    seed: 0
+    num_tests: 80 # Ran multiple instances in parallel with tmux
+    alpha: [0.1, 0.99, 0.01]
+    alphadecay: [0.001, 0.5, 0.001]
+    splitdecay: [0.7, 0.999, 0.001]
+    visitdecay: [0.7, 0.999, 0.001]
+    gamma: [0.1, 0.99, 0.01]
+    maxdepth: [20, 90, 5]
+    trimvisit: [0.1, 0.7, 0.01]
+    maxq: [100, 1000, 50]
+    banditbatch: [10, 300, 5]
+

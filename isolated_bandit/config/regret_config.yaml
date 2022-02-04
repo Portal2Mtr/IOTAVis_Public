@@ -1,0 +1,12 @@
+# Regret simulation config parameters
+simParams:
+  control_budget: 0 # Attack budget removed for control
+  attack_budget: 30 # Overall attack budget for adversary
+  biased_ts_batch: 20 # Number before batch update
+  num_epochs: 10000
+  num_trials: 100
+  arm_mean_1: 0.3
+  arm_mean_2: 0.5
+  arm_mean_3: 0.7
+  arm_var: 0.001
+

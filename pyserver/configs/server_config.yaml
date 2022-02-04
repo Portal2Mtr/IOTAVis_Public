@@ -1,0 +1,15 @@
+# Server configuration parameters
+envParams:
+      nodeCount: 1000
+      num_trials: 10
+      lambdaVal: 0 # Overwritten
+      tipSelectionAlgorithm: "URTS"
+      alpha: 0.1
+      envSeed: 0
+      alphaHigh: 0.9
+      alphaLow: 0.1
+      numTipStart: 2
+      smoothWindow: 20
+      mcmcWindowStart: 10 # Time bounds for start and stop mcmc
+      mcmcWindowStop: 20
+

@@ -1,0 +1,14 @@
+# started on Fri Aug 20 14:24:38 2021
+
+
+ Performance counter stats for 'python3 ./powerscript.py --algo DT --trial 1':
+
+      406700559797      instructions              #    1.57  insn per cycle         
+      258919982309      cycles                                                      
+
+     433.572872034 seconds time elapsed
+
+     430.376086000 seconds user
+       1.155585000 seconds sys
+
+

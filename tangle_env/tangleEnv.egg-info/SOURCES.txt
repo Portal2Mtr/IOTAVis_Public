@@ -1,0 +1,7 @@
+README.md
+setup.py
+tangleEnv.egg-info/PKG-INFO
+tangleEnv.egg-info/SOURCES.txt
+tangleEnv.egg-info/dependency_links.txt
+tangleEnv.egg-info/requires.txt
+tangleEnv.egg-info/top_level.txt

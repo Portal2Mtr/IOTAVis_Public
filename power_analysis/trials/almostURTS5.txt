@@ -1,0 +1,14 @@
+# started on Fri Aug 20 14:20:38 2021
+
+
+ Performance counter stats for 'python3 ./powerscript.py --algo almostURTS --trial 5':
+
+      232279049567      instructions              #    1.77  insn per cycle         
+      131550266605      cycles                                                      
+
+     219.636294878 seconds time elapsed
+
+     218.832375000 seconds user
+       0.442794000 seconds sys
+
+
